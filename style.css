@@ -1,64 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    color: #333;
+    padding: 30px;
+    line-height: 1.6;
+}
+h1{
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
 }
 
 table{
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table, th, td{
-    border: 1px solid #333;
-}
-
-th{
-    background-color: #78cef7;
-}
-td{
-    background-color: #f0f5f4;
-}
-td:hover{
-    background-color: rgb(96, 173, 218);
-}
-
-th, td{
-    padding: 10px;
-}
-
-.main-infor{
-    border-radius: 10px;
+    background: white;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
 }
 
-img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.social{
-    color: #f2f2f2;
-    height: 50px;
-    border-radius: 5px;
-    margin: 10px 20px;
-    cursor: pointer;
+td, th{
+    padding: 15px;
     border: 1px solid #ddd;
-    background-color: #169c9c;
-    padding: 10px 20px;
-    transition: 0.3s;
-    font-size: 18px;
-    border: none;
 }
-.social:hover{
-    background: #0eb994;
+
+.avt{
+    width: 250px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.avt img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2563eb;
+    transition: 0.3s;
+}
+
+.avt img:hover{
     transform: scale(1.05);
 }
 
-.container{
-    background-color: #f0a3a3;
+.infor h3{
+    color: #2563eb;
+    margin-bottom: 10px;
 }
-a{
+
+.infor p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+h3{
+    margin: 20px 0 10px;
+    color: #1d4ed8;
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+}
+
+ul, ol{
+    background: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+li{
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.social{
+    background: #2563eb;
+    border: none;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social a{
+    color: white;
     text-decoration: none;
-    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social:hover{
+    background: #1e40af;
+    transform: translateY(-3px);
+}
+
+/* Responsive cho điện thoại */
+@media(max-width:768px){
+
+    table, tr, td{
+        display: block;
+        width: 100%;
+    }
+
+    .avt{
+        border-bottom: none;
+    }
+
+    .avt img{
+        margin: 20px 0;
+    }
+
+    body{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
 }
