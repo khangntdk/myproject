@@ -1,0 +1,89 @@
+/*css*/
+*{
+	boxsizing: border-box;
+}
+body{
+	margin:0;
+	
+}
+.username{
+	
+}
+
+.password{
+	
+	
+}
+.container{
+	background:linear-gradient(135deg, #fbcfe8, #ddd6fe, #bfdbfe);
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+#frmLogin{
+	
+	padding: 30px 20px;
+	background:linear-gradient(135deg, #7c3aaed, #6366f1);
+	max-width:500px;
+	height:auto;
+	width:100%;
+	border-radius:30px;
+	box-shadow: 0px 20px 30px rgba(152,92,246,0.5);
+	
+}
+#frmLogin a{
+	text-decoration:none;
+	color:red;
+}
+.form-group{
+	margin:20px 0;
+}
+.form-group label{
+	margin:10px 0;
+	font-size:20px;
+}
+h2{
+	text-align:center;
+	color:#333;
+}
+
+#txtUsername{
+	margin:10px 0;
+	width:100%;
+	outline:none;
+	border:none;
+	border-radius: 5px;
+	padding:10px 0;
+	display:block;
+}
+
+#Password{
+	margin:10px 0;
+	width:100%;
+	outline:none;
+	border:none;
+	border-radius: 5px;
+	padding:10px 0;
+	display:block;
+}
+
+.input{
+	cursor:pointer;
+	margin:12px 20px 0 0;
+	transition: 0.3s ease;
+	border:none;
+	color: #fff;
+	border-radius: 5px;
+	padding:10px 30px;
+	background: #111827;
+}
+.input:hover{
+	tranform:scale(0.3);
+	background: pink;
+}
+.form-group{
+	
+}
