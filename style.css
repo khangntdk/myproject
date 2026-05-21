@@ -87,8 +87,11 @@ li{
     margin: 10px 0;
     font-size: 17px;
 }
-
+.social .form{
+	
+}
 .social{
+	margin-right:0;
     background: #2563eb;
     border: none;
     padding: 12px 25px;
