@@ -1,0 +1,53 @@
+/* css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f6f9;
+    padding: 30px;
+}
+
+table{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th{
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background: #f8f9fa;
+}
+
+tr:hover{
+    background: #eaf3ff;
+}
+
+.tenhang{
+    text-align: left;
+    padding-left: 15px;
+}
+
+#tongthanhtoan{
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}

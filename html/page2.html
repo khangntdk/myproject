@@ -9,25 +9,10 @@
 	<p id="name">
 		Duy Khang
 	</p>
-	<button type="button" onclick="Math()">Math</button>
 	<script>
-		function Math(){
-		let	b ;
-		let a ;
-		b = Number(prompt("Nhập chiều dài"));
-		do{
-		
-			
-			a = Number(prompt("Nhập chiều rộng"));
-		}while(a>b);
-
-		if(a=b)
-		{
-			alert(`diện tích hình vuông là: ${a*b}`);
-		} else{
-			alert(`diện tích hình chữ nhật là: ${a*b}`);
-		}
-		}
+		let name = prompt("Nhập tên của bạn");
+		let  yob= Number(prompt("Nhập năm sinh của bạn"));
+		alert(" xin chào! "+name+" năm 2026 bạn đã "+(2026-yob)+" rồi đó hihiii");
 	</script>
 </body>
 </html>
