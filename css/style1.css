@@ -1,168 +1,168 @@
 ./* Reset */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Body */
 body{
-    background: linear-gradient(135deg, #f4f7fc, #dfe9f3);
-    color: #333;
-    padding: 30px;
-    max-width: 1200px;
-    margin: auto;
+background: linear-gradient(135deg, #f4f7fc, #dfe9f3);
+color: #333;
+padding: 30px;
+max-width: 1200px;
+margin: auto;
 }
 
 /* Tiêu đề */
 h1{
-    text-align: center;
-    color: #2c3e50;
-    font-size: 40px;
-    margin-bottom: 10px;
+text-align: center;
+color: #2c3e50;
+font-size: 40px;
+margin-bottom: 10px;
 }
 
 h2{
-    text-align: center;
-    color: #3498db;
-    margin-bottom: 30px;
+text-align: center;
+color: #3498db;
+margin-bottom: 30px;
 }
 
 h3{
-    color: #2c3e50;
-    margin-bottom: 15px;
+color: #2c3e50;
+margin-bottom: 15px;
 }
 
 /* Bảng giới thiệu */
 table{
-    width: 100%;
-    border-collapse: collapse;
-    background: #fff;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+width: 100%;
+border-collapse: collapse;
+background: #fff;
+margin-bottom: 25px;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 th{
-    background: #3498db;
-    color: white;
+background: #3498db;
+color: white;
 }
 
 th, td{
-    padding: 15px;
-    border: 1px solid #ddd;
+padding: 15px;
+border: 1px solid #ddd;
 }
 
 /* Avatar */
 .avt{
-    width: 250px;
-    text-align: center;
+width: 250px;
+text-align: center;
 }
 
 .avt img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #3498db;
-    transition: 0.3s;
+width: 180px;
+height: 180px;
+object-fit: cover;
+border-radius: 50%;
+border: 5px solid #3498db;
+transition: 0.3s;
 }
 
 .avt img:hover{
-    transform: scale(1.05);
+transform: scale(1.05);
 }
 
 /* Giới thiệu */
 .infor{
-    line-height: 1.8;
+line-height: 1.8;
 }
 
 /* Các khối nội dung */
 .hope,
 .skill,
 .contact{
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+background: white;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 /* Danh sách */
 ul,
 ol{
-    margin-left: 25px;
-    line-height: 2;
+margin-left: 25px;
+line-height: 2;
 }
 
 /* Button */
 .social{
-    background: #3498db;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+background: #3498db;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
 .social a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+color: white;
+text-decoration: none;
+font-weight: 600;
 }
 
 .social:hover{
-    background: #2980b9;
-    transform: translateY(-3px);
+background: #2980b9;
+transform: translateY(-3px);
 }
 
 /* Container Button */
 .container-form,
 .container-box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin: 25px 0;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+margin: 25px 0;
 }
 
 /* Nút chức năng */
 .container-box .social{
-    min-width: 250px;
+min-width: 250px;
 }
 
 /* Responsive */
 @media (max-width: 768px){
 
-    table tr{
-        display: block;
-    }
+table tr{
+    display: block;
+}
 
-    .avt,
-    .infor{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
+.avt,
+.infor{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
 
-    .infor{
-        padding-top: 20px;
-    }
+.infor{
+    padding-top: 20px;
+}
 
-    h1{
-        font-size: 30px;
-    }
+h1{
+    font-size: 30px;
+}
 
-    .container-form,
-    .container-box{
-        flex-direction: column;
-        align-items: center;
-    }
+.container-form,
+.container-box{
+    flex-direction: column;
+    align-items: center;
+}
 
-    .social{
-        width: 90%;
-    }
+.social{
+    width: 90%;
+}
 }

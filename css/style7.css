@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f4f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+#frmBCC {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+#frmBCC label {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+#frmBCC input[type="number"] {
+  width: 72px;
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: center;
+  outline: none;
+}
+
+#frmBCC input[type="number"]:focus {
+  box-shadow: 0 0 0 2px #afa9ec;
+  border-color: #7f77dd;
+}
+
+#frmBCC input[type="button"] {
+  padding: 7px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #534ab7;
+  color: #eeedfe;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+
+#frmBCC input[type="button"]:hover {
+  background: #3c3489;
+}
+
+#frmBCC input[type="button"]:active {
+  transform: scale(0.97);
+}
+
+#result {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 480px;
+  font-size: 15px;
+  line-height: 2;
+  color: #1a1a1a;
+}
