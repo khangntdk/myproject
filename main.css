@@ -49,11 +49,23 @@ transition: all 0.3s ease;
 
 .page-link:hover {
 background-color: #2563eb;
-color: white;
+color: #fff;
 transform: translateY(-3px);
 box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
 }
 
+.num{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e4273d;
+    /* text-align: center; */
+    margin-right: 10px;
+}
 
 /*RESPONSIVE*/
 
