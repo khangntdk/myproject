@@ -64,7 +64,7 @@ body{
 
     background:
         linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-        url('../assets/img/tulip.webp');
+        url('../assets/img/tulip.jpg');
 
     background-size: cover;
     background-position: center;
@@ -247,11 +247,8 @@ body{
 
 .footer{
     background: #222;
-
-    color: white;
-
+    color: #fff;
     text-align: center;
-
     padding: 25px;
 }
 

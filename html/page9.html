@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Perfume Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <header class="header">
+
+        <div class="logo">
+            DK-Shop
+        </div>
+
+        <nav class="menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+    </header>
+
+    <!-- HEADER -->
+    <div class="hero">
+        <div class="overlay">
+            <h1>Luxury Perfume</h1>
+            <p>Khám phá thế giới hương thơm đẳng cấp</p>
+        </div>
+    </div>
+
+    <!-- PRODUCT LIST -->
+    <section class="container py-5">
+
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2 class="section-title">Sản phẩm nổi bật</h2>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="product-list">
+
+        </div>
+
+    </section>
+    <footer class="footer">
+       Perfume
+    </footer>
+    
+    <script src="../js/lib.js"></script>
+
+    <script>
+        loadAllProduct();
+    </script>
+
+</body>
+</html>

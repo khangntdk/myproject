@@ -1,3 +1,6 @@
+//Khai báo một đối tượng
+
+
 
 function inBCC(n){
 
@@ -63,4 +66,131 @@ function addItem(name, price, description, linkproduct, image){
     document.getElementById('container-product-list').appendChild(item);
 
 
+}
+
+const products = [
+    {
+        id:"1",
+        name:"Nước hoa Montblanc",
+        price:"2.500.000",
+        description:"Hương thơm nam tính và ấm áp, lý tưởng cho những buổi tối lãng mạn.",
+        image:"../assets/img/montblanc.jpg",
+        link:"chi-tiet.html"
+    },
+
+    {
+        id:"2",
+        name:"Nước hoa Versace",
+        price:"3.500.000",
+        description:"Versace Bright Crystal EDT với hương thơm quyến rũ và sang trọng.",
+        image:"../assets/img/versace.webp",
+        link:"chi-tiet.html"
+    },
+
+    {
+        id:"3",
+        name:"Nước hoa Dior",
+        price:"3.800.000",
+        description:"Mang phong cách quý ông hiện đại với hương thơm mạnh mẽ đầy cuốn hút.",
+        image:"../assets/img/dior.jpg",
+        link:"chi-tiet.html"
+    },
+
+    {
+        id:"4",
+        name:"Nước hoa Afnan 9PM",
+        price:"1.000.000",
+        description:"Mùi hương ngọt ngào và nam tính đến từ Dubai.",
+        image:"../assets/img/9pm.jpg",
+        link:"chi-tiet.html"
+    }
+];
+
+function addItemV2(product){
+
+    document.getElementById("product-list").innerHTML += `
+
+        <div class="col">
+
+            <div class="card product-item h-100">
+
+                <div class="product-image">
+                    <img src="${product.image}" alt="${product.name}">
+                </div>
+
+                <div class="product-info">
+
+                    <h4>${product.name}</h4>
+
+                    <div class="price">
+                        ${product.price} VNĐ
+                    </div>
+
+                    <p class="description">
+                        ${product.description}
+                    </p>
+
+                    <a href="${product.link}" class="btn-detail">
+                        Xem chi tiết
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+}
+
+function loadAllProduct(){
+
+    let result = "";
+
+    products.forEach(product => {
+
+        result += `
+            <div class="col">
+
+                <div class="card product-item h-100">
+
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}">
+                    </div>
+
+                    <div class="product-info">
+
+                        <h4>${product.name}</h4>
+
+                        <div class="price">
+                            ${product.price} VNĐ
+                        </div>
+
+                        <p class="description">
+                            ${product.description}
+                        </p>
+
+                        <a href="${product.link}" class="btn-detail">
+                            Xem chi tiết
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+    });
+
+    document.getElementById("product-list").innerHTML = result;
+}
+
+
+function loadAllProduct(){
+    let i=0;
+    while(i < products.length)
+    {
+        addItemV2(products[i]);
+        i++;
+    }
 }
