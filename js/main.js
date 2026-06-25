@@ -3,6 +3,7 @@
 const products = [
 
     {
+        id: 0,
         name: "Hoa Tulip",
         price: "350.000đ",
         description: "Hoa tulip nhập khẩu cao cấp nhiều màu sắc.",
@@ -11,6 +12,7 @@ const products = [
     },
 
     {
+        id: 1,
         name: "Hoa Lavender",
         price: "320.000đ",
         description: "Mang hương thơm nhẹ nhàng và sang trọng.",
@@ -19,6 +21,7 @@ const products = [
     },
 
     {
+        id: 2,
         name: "Hoa Hồng",
         price: "450.000đ",
         description: "Biểu tượng của tình yêu và sự lãng mạn.",
@@ -27,6 +30,7 @@ const products = [
     },
 
     {
+        id: 3,
         name: "Hoa Baby",
         price: "1.280.000đ",
         description: "Thiết kế tinh tế phù hợp làm quà tặng.",
@@ -79,7 +83,7 @@ function addItem(product){
 
     button.classList.add("btn-detail");
 
-    button.href = product.link;
+    button.href = `detail.html?id=${product.id}`;
 
     button.innerHTML = "Xem chi tiết";
 
@@ -102,3 +106,4 @@ function addItem(product){
 products.forEach(product => {
     addItem(product);
 });
+
