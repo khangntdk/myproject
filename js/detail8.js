@@ -89,7 +89,7 @@ relatedProducts.forEach(item => {
 
         <p>${item.price}</p>
 
-        <a href="product-detail.html?id=${item.id}">
+        <a href="product-detail8.html?id=${item.id}">
             Xem chi tiết
         </a>
 

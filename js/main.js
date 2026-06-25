@@ -83,7 +83,7 @@ function addItem(product){
 
     button.classList.add("btn-detail");
 
-    button.href = `detail.html?id=${product.id}`;
+    button.href = `detail8.html?id=${product.id}`;
 
     button.innerHTML = "Xem chi tiết";
 

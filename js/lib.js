@@ -130,8 +130,8 @@ function addItemV2(product){
                         ${product.description}
                     </p>
 
-                    <a href="${product.link}" class="btn-detail">
-                        Xem chi tiết
+                   <a href="../html/detail9.html?id=${product.id}" class="btn-detail">
+                    Xem chi tiết
                     </a>
 
                 </div>
